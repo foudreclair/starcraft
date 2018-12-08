@@ -3,8 +3,8 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
         <title>Starcrat Units</title>
-        <link href="./css/site.css" rel="stylesheet">
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/site.css" rel="stylesheet">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -13,19 +13,28 @@
                 </div>
                 <h4>Create unit</h4>
                 <form>
+                    <div class="form-group">
                     <p>Pick a type :</p>
-                    <select name="unit_type" id="unit_type">
+                    <select class="form-control" name="unit_type" id="unit_type">
                         <option>Marine</option>
                         <option>Valkyrie</option>
                         <option>Siege Tank</option>
                     </select>
                     </br>
                     <p>Name your unit :</p>
-                    <input type="text" name="unit_name" id="unit_name" placeholder="name">
-                    <button type="button" onclick="create_unit();">Click Me!</button>
+                    <input class="form-control" type="text" name="unit_name" id="unit_name" placeholder="name">
+                    <button type="button" class="btn btn-primary" onclick="create_unit();">Click Me!</button>
                 </form>
             </div>
-            <table id="tableau">
+            <table class="table table-bordered table-hover" id="tableau">
+                    <thead>
+                            <tr>
+                              <th scope="col">Type</th>
+                              <th scope="col">Id</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Action</th>
+                            </tr>
+                          </thead>
             </table>
             <!-- This is where you will put your HTML... -->
         </div>
