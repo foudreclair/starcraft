@@ -28,8 +28,7 @@ function create_unit(){
 }
 
 function delete_unit(id){
-	alert(id);
-	tableau.deleteRow(id);
+	tableau.deleteRow(id-1);
 
 }
 
