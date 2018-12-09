@@ -23,7 +23,7 @@ function create_unit(){
 	colonne3.innerHTML += document.getElementById("unit_name").value;
 
 	var colonne4 = ligne.insertCell(3);//on ajoute la seconde cellule
-	colonne3.innerHTML += '<button onclick="delete_unit("'+id+'")">Delete</button>' ;
+	colonne3.innerHTML += '<button onclick="delete_unit('+id+')">Delete</button>' ;
 	
 }
 
