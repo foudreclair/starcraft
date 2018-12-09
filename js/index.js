@@ -2,13 +2,17 @@
 
 var id=0;
 
-var unit_name;
-
+var units = [];
 
 function create_unit(){
+	var unit=[];
 	id+=1;
-	
-
+	//console.log(document.getElementById('unit_type').value);
+	//console.log(id);
+	//console.log(document.getElementById('unit_name').value);
+	unit = [document.getElementById('unit_type').value,id,document.getElementById('unit_name').value];
+	units.push(unit);
 
 }
+
 

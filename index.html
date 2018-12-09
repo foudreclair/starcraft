@@ -12,22 +12,22 @@
                 <h1>Starcraft Units</h1>
                 </div>
                 <h4>Create unit</h4>
-                <form name="unit">
+                <form>
                     <p>Pick a type :</p>
-                    <select name="unit_type">
+                    <select name="unit_type" id="unit_type">
                         <option>Marine</option>
                         <option>Valkyrie</option>
                         <option>Siege Tank</option>
                     </select>
                     </br>
                     <p>Name your unit :</p>
-                    <input type="text" name="unit_name" placeholder="name">
-
-
+                    <input type="text" name="unit_name" id="unit_name" placeholder="name">
+                    <button type="button" onclick="create_unit();">Click Me!</button>
                 </form>
             </div>
             <!-- This is where you will put your HTML... -->
         </div>
         <script type="text/javascript" src="/build/app.js"></script>
+        <script type="text/javascript" src="/js/index.js"></script>
     </body>
 </html>
